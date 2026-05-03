@@ -21,4 +21,4 @@ pip install -e ".[all]"
 bier-eval --dataset scifact --backend faiss
 ```
 
-Downloads the dataset under `datasets/` (override with `--data-dir`). For Qdrant/Elasticsearch, point `--qdrant-url` / `--es-hosts` at a running instance.
+`--dataset` takes a [BEIR dataset name](https://github.com/beir-cellar/beir#beers-available-datasets) (see the upstream table for all options). Downloads go under `datasets/` (override with `--data-dir`). For Qdrant/Elasticsearch, point `--qdrant-url` / `--es-hosts` at a running instance.
