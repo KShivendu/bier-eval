@@ -6,14 +6,14 @@ import sys
 
 from beir import util
 
-from bier_benches.backends import (
+from bier_eval.backends import (
     ElasticsearchVectorBackend,
     FaissFlatIPBackend,
     QdrantVectorBackend,
     TantivyLexicalBackend,
 )
-from bier_benches.beir_eval import dense_retrieve, evaluate_results, lexical_retrieve
-from bier_benches.encoders import SentenceTransformerEncoder
+from bier_eval.beir_eval import dense_retrieve, evaluate_results, lexical_retrieve
+from bier_eval.encoders import SentenceTransformerEncoder
 
 logging.basicConfig(level=logging.INFO, format="%(levelname)s %(message)s")
 logger = logging.getLogger(__name__)

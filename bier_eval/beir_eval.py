@@ -5,10 +5,10 @@ from typing import TYPE_CHECKING
 
 from beir.retrieval.evaluation import EvaluateRetrieval
 
-from bier_benches.corpus import passage_text
+from bier_eval.corpus import passage_text
 
 if TYPE_CHECKING:
-    from bier_benches.protocols import LexicalBackend, PassageEncoder, VectorBackend
+    from bier_eval.protocols import LexicalBackend, PassageEncoder, VectorBackend
 
 logger = logging.getLogger(__name__)
 
